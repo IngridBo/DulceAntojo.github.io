@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+    rel="stylesheet">
+    <link href="https://file.myfontastic.com/akGazC9c9vvwPD9yjWCh8n/icons.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Productos.css">
+    <title>Productos | DulceAntojo</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+  
+    <header>
+        <div class="icon__menu">
+            <i><img class="fab fa-youtube" src="/assets/logoDona.png" alt="Logo" id="btn_open" style="margin-left: 37px;"></i>
+        </div>
+    </header>   
+    <div class="menu__side" id="menu_side">
+        
+        <div class="name__page">
+
+            <a href="../index.html">
+                <h4>Dulce<span>Antojo</span></h4>
+            </a>
+        </div>
+
+
+        <div class="options__menu">
+
+            <a href="/html/Contáctanos.html">
+                <div class="option">
+                    <i><img src="/assets/contactanos icon.png" alt="icono" title="Contáctanos"></i>
+                    <h4>Contáctanos</h4>
+                </div>
+            </a>
+
+            <a href="/html/AcercaDe.html">
+                <div class="option">
+                    <i><img src="/assets/info.png" alt="Icono" title="Acerca de Nosotros"></i>
+                    <h4>Acerca de Nosotros</h4>
+                </div>
+            </a>
+
+            <a href="/html/Productos.html">
+                <div class="option">
+                    <i><img src="/assets/productos icon.png" alt="Icono" title="Productos"></i>
+                    <h4>Registrar Productos</h4>
+                </div>
+            </a>
+
+            <a href="/html/Agregar.html">
+                <div class="option">
+                    <i><img src="/assets/agregar icon.png" alt="Icono" title="Agregar"></i>
+                    <h4>Store</h4>
+                </div>
+            </a>
+            <a href="/html/carrito.html" class="selected">
+                <div class="option">
+                    <i><img src="/assets/registro.png" alt="Icono" title="Login"></i>
+                    <h4>Inventario</h4>
+                </div>
+            </a>
+
+            <a href="/html/Login.html">
+                <div class="option">
+                    <i><img src="/assets/login.png" alt="Icono" title="Login"></i>
+                    <h4>Cerrar Sesion</h4>
+                </div>
+            </a>
+
+
+        </div>
+    </div>
+
+
+  <!-- Page Content -->
+  <div class="login-box" ">
+    <div class="left-box">
+        <h1>Crear Porducto</h1>
+        <img id="logo_register" src="../assets/make.png" alt="">
+        <form  action="" method="POST" id="registrarUser">
+            <input type="text" name="nombre_prod" id="nombre_prod" class="input-box" placeholder="Nombre" required autofocus>
+            <textarea name="descripcion" id="descripcion" class="input-box" placeholder="Descripción del producto" required autocomplete="off"></textarea>
+            <input type="number" name="cantidad" id="cantidad" class="input-box" placeholder="Cantidad" required>
+            <input type="number" name="precio" id="precio" class="input-box" placeholder="Precio" required>
+            <input type="file" name="img" id="img" class="input-box" placeholder="Imagen" required>
+            <input type="submit" name="entrar" value="Guardar">
+        </form>
+    </div>		
+</div>
+<footer><h2>© Creado con el ❤️ por QueSoft Col.</h2>
+    <div>
+    <a href="https://www.instagram.com/"  class="icon-insta">
+    </a>  Siguenos en Instagram.</p>
+    </div>
+</footer>
+  <script src="../js/script.js"></script>
+  </body>
+</html>

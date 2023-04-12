@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous"
+  />  
+ <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="../css/Carrito.css">
+
+     <title>Carrito Compras</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+    <header>
+        <div class="icon__menu">
+            <i><img class="fab fa-youtube" src="/assets/logoDona.png" alt="Logo" id="btn_open" style="margin-left: 0px;"></i>
+        </div>
+    </header>  
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+
+            <a id="title"href="/index.html">
+            <h4>Dulce<span>Antojo</span></h4>
+        </div>
+        </a>
+
+        <div class="options__menu">	
+
+          <a href="/html/Contáctanos.html">
+                <div class="option">
+                    <i><img src="/assets/contactanos icon.png" alt="icono"title="Contáctanos"></i>
+                    <h4>Contáctanos</h4>
+                </div>
+            </a>
+            
+            <a href="/html/AcercaDe.html">
+                <div class="option">
+                    <i><img src="/assets/info.png" alt="Icono"title="Acerca de Nosotros"></i>
+                    <h4>Acerca de Nosotros</h4>
+                </div>
+            </a>
+
+            <a href="/html/Productos.html">
+                <div class="option">
+                    <i><img src="/assets/productos icon.png" alt="Icono" title="Productos"></i>
+                    <h4>Productos</h4>
+                </div>
+            </a>
+
+            <a href="/html/Agregar.html">
+                <div class="option">
+                    <i><img src="/assets/agregar icon.png"alt="Icono"title="Agregar"></i>
+                    <h4>Agregar</h4>
+                </div>
+            </a>
+
+
+            <a href="/html/Login.html" class="selected">
+                <div class="option">
+                    <i><img src="/assets/login.png" alt="Icono"title="Login"></i>
+                    <h4>Login</h4>
+                </div>
+            </a>
+
+        </div>
+        
+    </div>
+  <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+  Producto Añadido al carrito!
+  </div>
+  <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    Producto removido!
+  </div>
+
+  <div class="tab-content" id="pills-tabContent">
+    <div
+      class="tab-pane fade "
+      id="pills-home"
+      role="tabpanel"
+      aria-labelledby="pills-home-tab"
+    >
+      1
+    </div>
+    <div
+      class="tab-pane fade show active container"
+      id="pills-profile"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab"
+    >
+      <h2 class="h4 m-4" id="title">Productos</h2>
+
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+        <div class="col d-flex jfy-content-center mb-4" id="tarject">
+          <div class="card shadow mb-1 bg-teal rounded" sustityle="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Cupcake</h5>
+            <img src="../assets/1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">Pequeña tarta para una persona. Se hornean en un molde.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 3</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+              src="https://js.stripe.com/v3/buy-button.js">
+              </script>
+
+              <stripe-buy-button
+              buy-button-id="buy_btn_1MvpfJCXKEwjecRwjND4o12E"
+              publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+</stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-teal rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Desayuno</h5>
+            <img src="../assets/2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">La crep se obtiene por la cocción de la pasta extendida en forma de disco y cocinada por sus dos caras, hasta que se dore.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 4</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+                src="https://js.stripe.com/v3/buy-button.js">
+              </script>
+
+              <stripe-buy-button
+              buy-button-id="buy_btn_1MvpjkCXKEwjecRw2FqUgKWl"
+              publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+</stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-teal rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Red Velvet</h5>
+            <img src="../assets/3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">Un pastel de terciopelo rojo es un pastel de chocolate con un color rojo oscuro o rojo brillante.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 4</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+               src="https://js.stripe.com/v3/buy-button.js">
+              </script>
+
+              <stripe-buy-button
+              buy-button-id="buy_btn_1Mvpl7CXKEwjecRwZOmEskV7"
+              publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+</stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-teal rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Pastel mil Hojas</h5>
+            <img src="../assets/4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">Pastel de forma rectangular, que contiene merengue o crema pastelera entre dos capas de hojaldre.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 4</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+              src="https://js.stripe.com/v3/buy-button.js">
+             </script>
+            <stripe-buy-button
+             buy-button-id="buy_btn_1MvovgCXKEwjecRwZmSQ7FYz"
+             publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+</stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-teal rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Blueberry Cake</h5>
+            <img src="../assets/5.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">Tarta sin gluten con una base de galleta crujiente con mantequilla, un suave mousse de queso.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+               src="https://js.stripe.com/v3/buy-button.js">
+              </script>
+
+              <stripe-buy-button
+              buy-button-id="buy_btn_1MvpCTCXKEwjecRw80Uv7XTR"
+              publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+</stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-teal rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Chocolate Milk Desert</h5>
+            <img src="../assets/6.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">La leche chocolatada es un tipo de leche aromatizada que se elabora mezclando sólidos de cacao con leche.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+               src="https://js.stripe.com/v3/buy-button.js">
+              </script>
+
+              <stripe-buy-button
+               buy-button-id="buy_btn_1Mvp5BCXKEwjecRw0KsemGtk"
+               publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+</stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-teal rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Chocolate Cheesecake</h5>
+            <img src="../assets/7.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">Un deliciosos pastel de chocolate y sin horno.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+              src="https://js.stripe.com/v3/buy-button.js">
+            </script>
+
+            <stripe-buy-button
+             buy-button-id="buy_btn_1Mvp1fCXKEwjecRwofrDrtvH"
+             publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+             </stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-teal rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-danger">Tiramisu Cake</h5>
+            <img src="../assets/8.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-dark-50 description">El tiramisú es un postre en capas que consiste de cuatro ingredientes esenciales. Estos son café, mascarpone.</p>
+              <h5 class="text-primary">Precio: <span class="precio">$ 5</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="btn btn-primary button">Añadir a Carrito</button>
+              <script async
+               src="https://js.stripe.com/v3/buy-button.js">
+              </script>
+
+              <stripe-buy-button
+              buy-button-id="buy_btn_1MvpEECXKEwjecRw42TboCPi"
+              publishable-key="pk_test_51Mr5Z6CXKEwjecRwSgSt9NNlsLyvXLeUHLmA6q5tSqUrHSOBkKilHRtLlr0JPQWBiSqq0Li2jfxzZSvS1txATD1300RuyS1QvO"
+>
+</stripe-buy-button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div
+      class="tab-pane fade carrito"
+      id="pills-contact"
+      role="tabpanel"
+      aria-labelledby="pills-contact-tab"
+    >
+    <br>
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr class="text-primary">
+          <th scope="col">#</th>
+          <th scope="col">Productos</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+
+        
+      </tbody>
+    </table>
+    <br><br>
+    <div class="row mx-4">
+      <div class="col">
+        <h3 class="itemCartTotal text-white">Total: 0</h3>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <button class="btn btn-success">COMPRAR</button>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/carritoLogica.js"></script>
+</body>
+</html>
